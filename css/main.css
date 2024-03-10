@@ -81,11 +81,12 @@ img {
 
 .header {
   position: absolute;
-  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header__container {
-  margin: 0 auto;
   padding-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,8 +109,10 @@ img {
 }
 
 .header-btn__svg {
+  display: block;
   width: 20px;
   height: 14px;
+  fill: #D41443;
 }
 
 .logo {
