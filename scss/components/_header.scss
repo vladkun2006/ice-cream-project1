@@ -1,0 +1,26 @@
+.header{
+    position: absolute;
+    margin: 0 auto;
+}
+
+.header__container{
+    margin: 0 auto;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-btn{
+    width: 20px;
+    height: 14px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-btn__svg{
+    width: 20px;
+    height: 14px;
+}

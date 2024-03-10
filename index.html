@@ -5,16 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Do you want people to click on your search result? Learn how to write the best meta description. Including 7 characteristics and examples!" />
     <title>Ice Cream</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
 </head>
 <body>
     <header class="header">
+        <div class="header__container container">
+            <a href="./index.html" class="logo">
+                <svg class="logo__icon">
+                    <use href="./img/svg/Group.svg#logo"></use>
+                </svg>
+            </a>
+            <button class="header-btn">
+                <svg class="header-btn__svg">
+                    <use href="./img/svg/sprite.svg#open-menu"></use>
+                </svg>
+            </button>
+            <!-- <div class="menu">
+                <button class="menu-btn">
+                    <svg class="menu-btn__close">
+                        <use></use>
+                    </svg>
+                </button>
+                <button class="menu__btn">
 
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                </ul>
+            </div> -->
+        </div>
     </header>
     <main>
         <section class="hero">
-
+            <div class="hero-container container">
+                <div class="hero__circle"></div>
+                <img class="hero__image" src="./img/hero/slider-pic7 1.png" alt="">
+                <h1 class="hero__title">
+                    ice cream <br>
+                    made with <br>
+                    <span class="hero__title-container">passion</span>
+                </h1>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <button class="hero__button hero__button--back-color">
+                            Products
+                        </button>
+                    </li>
+                    <li class="hero__item">
+                        <button class="hero__button">
+                            How it’s made?
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
