@@ -1,0 +1,119 @@
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    padding-top: 60px;
+    display: none;
+    background-color: $menu-primary-background-color;
+    height: 520px;
+    width: 100vw;
+    
+    &.is-open{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.menu__btn-switch{
+    position: absolute;
+    z-index: 999;
+    right: 20px;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0px;
+    margin: 0px;
+
+    &:hover .menu__btn-svg,
+    &:focus .menu__btn-svg{
+        stroke: $circle-color;
+    }
+}
+
+.menu__btn-svg{
+    width: 14px;
+    height: 14px;
+    display: block;
+    stroke: $title-primary-color;
+    transition: stroke $cubic;
+}
+
+.menu__btn-buy{
+    margin: 0 auto;
+    width: 210px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $hero-title-container;
+    background-color: $title-primary-color;
+    border: none;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color $cubic, background-color $cubic;
+
+    &:hover .menu__svg-buy,
+    &:focus .menu__svg-buy{
+        fill: $title-primary-color;
+    }
+
+    &:hover,
+    &:focus{
+        color: $title-primary-color;
+        background-color: $hero-title-container;
+    }
+}
+
+.menu__btn-text{
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.menu__svg-buy{
+    fill: $hero-title-container;
+    width: 8px;
+    height: 8px;
+    margin-left: 14px;
+    transition: fill $cubic
+}
+
+.menu__list{
+    margin-top: 19px;
+}
+
+.menu__item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 40px;
+    width: calc(100%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu__item:nth-child(2n+1){
+    height: 42px;
+    border-top: $menu-border-color solid 1px;
+    border-bottom: $menu-border-color solid 1px;
+}
+
+.menu__link{
+    color: $title-primary-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    transition: color $cubic;
+
+    &:focus,
+    &:hover{
+        color: $hero-title-container;
+    }
+}
+
+.active{
+    color: $hero-title-container;
+}

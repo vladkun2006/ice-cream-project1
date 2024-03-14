@@ -16,34 +16,52 @@
                     <use href="./img/svg/Group.svg#logo"></use>
                 </svg>
             </a>
-            <button class="header-btn">
-                <svg class="header-btn__svg">
+            <button type="menu" class="header__btn-switch" data-menu-button>
+                <svg class="header__btn-svg"
+                aria-label="switch button for menu"
+                aria-expanded="false"
+                role="button">
                     <use href="./img/svg/Burger.svg#open-menu"></use>
                 </svg>
             </button>
-            <!-- <div class="menu">
-                <button class="menu-btn">
-                    <svg class="menu-btn__close">
-                        <use></use>
+            <div class="menu" data-menu data-menu data-btn-switch>
+                <button class="menu__btn-switch" data-menu-switch>
+                    <svg class="menu__btn-svg"
+                    aria-label="switch button for menu"
+                    aria-expanded="false"
+                    role="button">
+                        <use href="./img/svg/close.svg#close"></use>
                     </svg>
                 </button>
-                <button class="menu__btn">
-
+                <button class="menu__btn-buy">
+                    <span class="menu__btn-text">Buy now </span>
+                    <svg class="menu__svg-buy">
+                        <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
+                    </svg>
                 </button>
                 <ul class="menu__list">
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
+                    <li class="menu__item">
+                        <a class="menu__link active" href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">How it’s made?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Our products</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contact</a>
+                    </li>
                 </ul>
-            </div> -->
+            </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="hero-container container">
-                <div class="hero__circle"></div>
+            <div class="hero__container container">
                 <img class="hero__image" src="./img/hero/slider-pic7 1.png" alt="">
                 <h1 class="hero__title">
                     ice cream <br>
@@ -52,18 +70,49 @@
                 </h1>
                 <ul class="hero__list">
                     <li class="hero__item">
-                        <button class="hero__button hero__button--back-color">
+                        <button type="button" class="hero__button hero__button--back-color">
                             Products
                         </button>
                     </li>
                     <li class="hero__item">
-                        <button class="hero__button">
+                        <button type="button" class="hero__button">
                             How it’s made?
                         </button>
                     </li>
                 </ul>
             </div>
         </section>
+        <section class="products section">
+            <div class="products__container container">
+                <p class="products__subtitle">100% natural</p>
+                <h2 class="products__title">products</h2>
+                <ul class="products__list">
+                    <li class="products__item">
+                        <div class="product-card">
+                            <img class="product-card" src="" alt="">
+                            <ul class="product-card__list">
+                                <li class="product-card__item"></li>
+                                <li class="product-card__item"></li>
+                                <li class="product-card__item"></li>
+                            </ul>
+                            <p class="product-card__text"></p>
+                            <button class="product-card__btn">
+                                <svg class="product-card__svg">
+                                    <use></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="products__item">
+
+                    </li>
+                    <li class="products__item">
+
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+.products{
+    background-color: $title-primary-color;
+}
+
+.products__container{
+    width: 320px;
+} 
+
+.products__subtitle{
+    margin-bottom: 15px;
+    color: $circle-color;
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products__title{
+    color: $hero-title-container;
+    font-family: Titan One;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products__list{
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    margin-top: 148px;
+}

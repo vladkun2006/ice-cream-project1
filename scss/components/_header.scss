@@ -1,5 +1,6 @@
 .header{
     position: absolute;
+    z-index: 5;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -11,18 +12,25 @@
     align-items: center;
 }
 
-.header-btn{
+.header__btn-switch{
     width: 20px;
     height: 14px;
     border: none;
     background-color: rgba(0,0,0,0);
     padding: 0px;
     margin: 0px;
+
+    &:hover .header__btn-svg,
+    &:focus .header__btn-svg{
+        stroke: $title-primary-color;
+    }
+
 }
 
-.header-btn__svg{
+.header__btn-svg{
     display: block;
     width: 20px;
     height: 14px;
-    fill: #D41443;
+    stroke: $hero-title-container;
+    transition: stroke $cubic;
 }

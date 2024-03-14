@@ -3,20 +3,14 @@
     height: 502px;
     padding-top: 194px;
     padding-bottom: 158px;
+    background-image: url(/img/hero/circle.png);
+    background-position: 36px 83px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.hero-container{
+.hero__container{
     position: relative;
-}
-
-.hero__circle{
-    position: absolute;
-    top: -111px;
-    right: -62px;
-    width: 344px;
-    height: 344px;
-    background-color: $circle-color;
-    border-radius: 50%;
 }
 
 .hero__image{
@@ -64,16 +58,30 @@
     height: 24px;
     color:$hero-title-container;
     background-color: $title-primary-color;
-    font-family: DM Sans;
     font-size: 8px;
     line-height: 10px;
     letter-spacing: 0em;
     text-align: center;
     border-radius: 20px;
+    transition: color $cubic, background-color $cubic;
+
+    &:hover,
+    &:focus{
+        color: $title-primary-color;
+        background-color: $hero-title-container;
+    }
+
 }
 
 .hero__button--back-color{
     width: 63px;
     color: $title-primary-color;
     background-color: $hero-title-container;
+
+    &:hover,
+    &:focus{
+        color:$hero-title-container;
+        background-color: $title-primary-color;
+    }
+
 }
