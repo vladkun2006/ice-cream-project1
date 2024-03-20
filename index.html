@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Do you want people to click on your search result? Learn how to write the best meta description. Including 7 characteristics and examples!" />
     <title>Ice Cream</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
@@ -206,16 +210,20 @@
                         <img class="gallery__img" src="./img/gellery/gallery1.jpg" width="44px" height="44px" alt="icecream">
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery2.jpg" width="44px" height="44px" alt="icecream"><img class="gallery__img" src="./img/gellery/gallery3.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery2.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery3.jpg" width="44px" height="44px" alt="icecream">
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery4.jpg" width="90px" alt="icecream"><img class="gallery__img" src="./img/gellery/gallery5.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery4.jpg" width="90px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery5.jpg" width="44px" height="44px" alt="icecream">
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery6.jpg" width="44px" height="44px" alt="icecream"><img class="gallery__img" src="./img/gellery/gallery7.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery6.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery7.jpg" width="44px" height="44px" alt="icecream">
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery8.jpg" width="44px" height="44px" alt="icecream"><img class="gallery__img" src="./img/gellery/gallery9.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery8.jpg" width="44px" height="44px" alt="icecream">
+                        <img class="gallery__img" src="./img/gellery/gallery9.jpg" width="44px" height="44px" alt="icecream">
                     </li>
                     <li class="gallery__item">
                         <img class="gallery__img" src="./img/gellery/gallery10.jpg" width="44px" height="44px" alt="icecream">
@@ -223,7 +231,105 @@
                 </ul>
             </div>
         </section>
+        <section class="comments section">
+            <div class="comments__container container swiper" >
+                <ul class="comments__list swiper-wrapper">
+                    <li class="comments__item swiper-slide">
+                        <img class="comments__img" src="./img/comments/comments1.png" alt="girl">
+                        <div class="comments__background-container">
+                            <p class="comments__description">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                        </div>
+                        <ul class="comments__dot-list">
+                            <li class="comments__dot"></li>
+                            <li class="comments__dot"></li>
+                            <li class="comments__dot"></li>
+                        </ul>
+                        <p class="comments__location-text">Emily, Los Angeles</p>
+                    </li>
+                    <li class="comments__item swiper-slide">
+                        <img class="comments__img" src="./img/gellery/gallery8.jpg" alt="girl">
+                        <div class="comments__background-container">
+                            <p class="comments__description">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                        </div>
+                        <ul class="comments__dot-list">
+                            <li class="comments__dot"></li>
+                            <li class="comments__dot"></li>
+                            <li class="comments__dot"></li>
+                        </ul>
+                        <p class="comments__location-text">Anna, Berlin</p>
+                    </li>
+                    <li class="comments__item swiper-slide">
+                        <img class="comments__img" src="./img/gellery/gallery4.jpg" alt="girl">
+                        <div class="comments__background-container">
+                            <p class="comments__description">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+                        </div>
+                        <ul class="comments__dot-list">
+                            <li class="comments__dot"></li>
+                            <li class="comments__dot"></li>
+                            <li class="comments__dot"></li>
+                        </ul>
+                        <p class="comments__location-text">Vlad, Kiev</p>
+                    </li>
+                </ul>
+                <div class="swiper-pagination">
+                    <ul class="comments__dot-list">
+                        <li class="comments__dot"></li>
+                        <li class="comments__dot"></li>
+                        <li class="comments__dot"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <ul class="footer-card">
+                <li class="footer-card__item">
+                    <h3 class="footer-card__title">CAFE</h3>
+                    <p class="footer-card__city">Chicago</p>
+                    <p class="footer-card__place-discription">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                    <ul class="timetable">
+                        <li class="timetable__item">
+                            <p class="timetable__date">Monday - Friday</p>
+                            <p class="timetable__time">06:00 AM - 10:00 PM</p>
+                        </li>
+                        <li class="timetable__item">
+                            <p class="timetable__date">Saturday - Sunday</p>
+                            <p class="timetable__time">08:00 AM - 16:00 PM</p>
+                        </li>
+                    </ul>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="#">+61(0) 383 766 284</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="#">noreply@envato.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li class="footer-card__item">
+
+                </li>
+                <li class="footer-card__item">
+
+                </li> -->
+            </ul>
+            <!-- <ul class="footer-btn">
+                <li class="footer-btn__item">
+
+                </li>
+                <li class="footer-btn__item">
+
+                </li>
+            </ul>
+            <div class="footer-text">
+                <p class="footer-text__subtitle"></p>
+                <h2 class="footer-text__title"></h2>
+            </div> -->
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script-swiper.js"></script>
     <script src="./js/menu.js"></script>
 </body>
 </html>

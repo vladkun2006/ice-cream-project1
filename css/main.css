@@ -263,7 +263,7 @@ img {
   height: 502px;
   padding-top: 194px;
   padding-bottom: 158px;
-  background-image: url(./img/hero/circle.png);
+  background-image: url(../img/hero/circle.png);
   background-position: 36px 83px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -622,6 +622,11 @@ img {
   text-align: left;
 }
 
+.gallery {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(22%, #FFF5F6), color-stop(22%, #ffffff), color-stop(58%, #ffffff));
+  background-image: linear-gradient(to bottom, #FFF5F6 22%, #ffffff 22%, #ffffff 58%);
+}
+
 .gallery__container {
   width: 320px;
   padding: 0;
@@ -666,7 +671,206 @@ img {
   margin-top: 49px;
 }
 
+.gallery__img {
+  border-radius: 4px;
+}
+
 .gallery__img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.comments {
+  background-color: #ffffff;
+}
+
+.comments__container {
+  width: 320px;
+}
+
+.comments__img {
+  width: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  border-radius: 50%;
+}
+
+.comments__background-container {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 308px;
+  padding-top: 43px;
+  padding-bottom: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #FAFAFA;
+  background-image: url(../../img/svg/comments.svg#comments);
+  background-repeat: no-repeat;
+  background-position: 53px 30px;
+}
+
+.comments__description {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.58;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+  background-image: repeating-linear-gradient(to bottom, #E1E1E1, #E1E1E1 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 31px);
+}
+
+.comments__dot-list {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comments__dot {
+  width: 4px;
+  height: 4px;
+  background-color: #C7133E;
+  border-radius: 50%;
+}
+
+.comments__location-text {
+  margin-top: 16px;
+  padding-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  border-radius: 0%;
+  background-color: #ffffff;
+  background-image: url(../../img/svg/home1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+  background-color: #ffffff;
+}
+
+.footer__container {
+  width: 320px;
+}
+
+.footer-card__item {
+  padding: 40px 32px;
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1019607843);
+          box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1019607843);
+  border-radius: 24px;
+}
+
+.footer-card__title {
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 16px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ffffff;
+  background-color: #C2E297;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.footer-card__city {
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.footer-card__place-discription {
+  position: relative;
+  color: #907E82;
+  width: 179px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.footer-card__place-discription::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: -24px;
+  width: 216px;
+  height: 1px;
+  background-color: #E1E1E1;
+}
+
+.timetable {
+  position: relative;
+  margin-top: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1, 86;
+  text-align: left;
+}
+
+.timetable::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: -24px;
+  width: 216px;
+  height: 1px;
+  background-color: #E1E1E1;
+}
+
+.timetable__item {
+  margin-bottom: 8px;
+}
+
+.timetable__date {
+  color: #000000;
+}
+
+.timetable__time {
+  color: #FFA5BA;
+}
+
+.contacts {
+  margin-top: 48px;
 }/*# sourceMappingURL=main.css.map */
