@@ -707,7 +707,7 @@ img {
   padding-left: 50px;
   padding-right: 50px;
   background-color: #FAFAFA;
-  background-image: url(../../../ice-cream-project1/img/svg/comments.svg);
+  background-image: url(../../img/svg/comments.svg#comments);
   background-repeat: no-repeat;
   background-position: 53px 30px;
 }
@@ -767,7 +767,7 @@ img {
   height: 12px;
   border-radius: 0%;
   background-color: #ffffff;
-  background-image: url(../../../ice-cream-project1/img/svg/home1.svg);
+  background-image: url(../../img/svg/home1.svg#home1);
   background-repeat: no-repeat;
   background-position: center;
 }
