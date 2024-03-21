@@ -25,7 +25,6 @@
     padding-left: 50px;
     padding-right: 50px;
     background-color: $comments-container;
-    background-image: url(./img/svg/comments.svg);
     background-repeat: no-repeat;
     background-position: 53px 30px;
 }
@@ -85,7 +84,10 @@
     height: 12px;
     border-radius: 0%;
     background-color: $title-primary-color;
-    background-image: url(./img/svg/home1.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.swiper-pagination-bullet-active{
+    background-image: url(../img/svg/home1.svg);
 }
