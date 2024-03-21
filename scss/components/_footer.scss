@@ -1,97 +1,15 @@
 .footer{
-    background-color: $title-primary-color;
+    border-top: 1px solid $comments-primary-color;
+    padding-top: 16px;
+    padding-bottom: 3px;
 }
 
-.footer__container{
-    width: 320px;
-}
-
-.footer-card__item{
-    padding: 40px 32px;
-    box-shadow: 0px 8px 30px 0px #D414431A;
-    border-radius: 24px;
-}
-
-.footer-card__title{
-    width: 80px;
-    display: flex;
-    align-items: center;
-    height: 16px;
-    margin-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: $title-primary-color;
-    background-color: $milckshake-background;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 4px;
-}
-
-.footer-card__city{
-    margin-bottom: 8px;
-    color: $primary-black-color;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    text-align: left;
-}
-
-.footer-card__place-discription{
-    position: relative;
+.footer__text{
+    width: 150px;
+    margin: 0 auto;
     color: $secondary-text-color;
-    width: 179px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.footer-card__place-discription::after{
-    content: " ";
-    position: absolute;
-    left: 0px;
-    bottom: -24px;
-    width: 216px;
-    height: 1px;
-    background-color: $comments-primary-color;
-}
-
-.timetable{
-    position: relative;
-    margin-top: 48px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1,86;
-    text-align: left;
-}
-
-.timetable::after{
-    content: " ";
-    position: absolute;
-    left: 0px;
-    bottom: -24px;
-    width: 216px;
-    height: 1px;
-    background-color: $comments-primary-color;
-}
-
-.timetable__item{
-    margin-bottom: 8px;
-}
-
-.timetable__date{
-    color: $primary-black-color;
-}
-
-.timetable__time{
-    color: $circle-color;
-}
-
-.contacts{
-    margin-top: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.52;
+    text-align: center;
 }

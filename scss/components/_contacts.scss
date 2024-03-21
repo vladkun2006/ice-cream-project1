@@ -1,0 +1,218 @@
+.contacts{
+    background-image: linear-gradient(to bottom, $title-primary-color 16.5%, $primary-body-background-color 16.5%, $primary-body-background-color 67% );
+}
+
+.contacts__container{
+    width: 320px;
+    padding-bottom: 40px;
+}
+
+.contacts-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-card__item{
+    padding: 40px 32px;
+    background-color: $title-primary-color;
+    box-shadow: 0px 8px 30px 0px #D414431A;
+    border-radius: 24px;
+}
+
+.contacts-card__title{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    height: 16px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: $title-primary-color;
+    background-color: $milckshake-background;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.contacts-card__title--width{
+    width: 130px;
+}
+
+.contacts-card__city{
+    margin-bottom: 8px;
+    color: $primary-black-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.contacts-card__place-discription{
+    position: relative;
+    color: $secondary-text-color;
+    width: 179px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.contacts-card__place-discription::after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    bottom: -24px;
+    width: 216px;
+    height: 1px;
+    background-color: $comments-primary-color;
+}
+
+.timetable{
+    position: relative;
+    margin-top: 48px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1,86;
+    text-align: left;
+}
+
+.timetable::after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    bottom: -24px;
+    width: 216px;
+    height: 1px;
+    background-color: $comments-primary-color;
+}
+
+.timetable__item{
+    margin-bottom: 8px;
+}
+
+.timetable__date{
+    color: $primary-black-color;
+}
+
+.timetable__time{
+    color: $circle-color;
+}
+
+.contacts__list{
+    margin-top: 48px;
+}
+
+.contacts__link{
+    color: $secondary-text-color;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.contacts-btn{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacts-btn__button{
+    width: 161px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    color: $hero-title-container;
+    background-color: $title-primary-color;
+    fill: $hero-title-container;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    border-radius: 22px;
+}
+
+.contacts-btn__button--color{
+    color: $title-primary-color;
+    background-color: $hero-title-container;
+    fill: $title-primary-color;
+}
+
+.contacts-btn__svg{
+    width: 10px;
+    height: 18px;
+    margin-left: 12px;
+}
+
+.contacts-text{
+    margin-top: 40px;
+    width: 224px;
+    height: 134px;
+    text-transform: uppercase;
+}
+
+.contacts-text__subtitle{
+    color: $circle-color;
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 1.15;
+    text-align: left;
+}
+
+.contacts-text__title{
+    margin-top: 16px;
+    color: $hero-title-container;
+    font-family: Titan One;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.social{
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+    gap: 28px;
+}
+
+.social__item{
+    padding: 0px;
+    margin: 0px;
+    width: 32px;
+    height: 32px;
+    background-color: $background-icons;
+    border-radius: 50%;
+}
+
+.social__link{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__text{
+    margin-top: 40px;
+    color: $primary-black-color;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.86;
+    text-align: right;
+}
+
+.contacts__text-link{
+    color: $hero-title-container;
+}
