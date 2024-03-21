@@ -711,7 +711,7 @@ img {
   background-position: 53px 30px;
 }
 
-.comments__background-container {
+.comments__background-container--svg {
   background-image: url(../img/svg/comments.svg);
 }
 
