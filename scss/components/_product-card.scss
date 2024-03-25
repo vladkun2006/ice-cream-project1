@@ -7,6 +7,22 @@
     background-color: $hero-background-color;
     border-radius: 24px;
     padding: 40px;
+    
+    @media screen and (min-width:768px ) {
+        width: 224px;
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        width: 368px;
+        padding-top: 165px;
+        padding-left: 63px;
+        padding-right: 63px;
+        padding-bottom: 40px;
+    }
 }
 
 .product-card--ice-coffe-background{
@@ -22,6 +38,17 @@
     top: -140px;
     left: 0px;
     z-index: 2;
+    
+    @media screen and (min-width:768px ) {
+        width: 224px;
+        top: -138px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        width: 368px;
+        height: 394px;
+        top: -261px;
+    }
 }
 
 .product-card__title{
@@ -33,6 +60,15 @@
     letter-spacing: 0.04em;
     text-align: center;
     text-transform: uppercase;
+        
+    @media screen and (min-width:768px ) {
+        margin-top: 86px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 0px;
+        font-size: 30px;
+    }
 }
 
 .product-card__list{
@@ -55,6 +91,11 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
+
+    @media screen and (min-width:1200px ) {
+        font-size: 16px;
+        line-height: 1.76;
+    }
 }
 
 .product-card__btn{
@@ -68,6 +109,10 @@
     margin: 0 auto;
     padding: 0px;
     border: none;
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 28px;
+    }
 }
 
 .product-card__svg{

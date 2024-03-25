@@ -12,4 +12,11 @@
     font-weight: 700;
     line-height: 1.52;
     text-align: center;
+
+    @media screen and (min-width:768px ) {
+        width: 290px;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
 }

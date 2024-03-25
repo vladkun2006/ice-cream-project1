@@ -1,17 +1,32 @@
 .menu{
-    position: fixed;
+    position: relative;
+    position: absolute;
     left: 0px;
     top: 0px;
     right: 0px;
     padding-top: 60px;
     display: none;
     background-color: $menu-primary-background-color;
-    height: 520px;
+    height: 502px;
     width: 100vw;
     
     &.is-open{
         display: flex;
         flex-direction: column;
+    }
+
+    @media screen and (min-width:768px ) {
+        top: 0px;
+        right: 0px;
+        left: auto;
+        width:45vw;
+        height: 416px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        padding-top: 40px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
 }
 
@@ -65,6 +80,16 @@
     &:focus{
         color: $title-primary-color;
         background-color: $hero-title-container;
+    }
+        
+    @media screen and (min-width:768px ) {
+        width:186px;;
+    }
+}
+
+.menu__btn-buy--width{
+    @media screen and (min-width:768px ) {
+        width: 160px;
     }
 }
 

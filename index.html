@@ -17,20 +17,49 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container container">
+        <div class="header__container">
             <a href="./index.html" class="logo">
                 <svg class="logo__icon">
                     <use href="./img/svg/logo.svg#logo"></use>
                 </svg>
             </a>
-            <button type="menu" class="header__btn-switch" data-menu-button>
-                <svg class="header__btn-svg"
-                aria-label="switch button for menu"
-                aria-expanded="false"
-                role="button">
-                    <use href="./img/svg/menu.svg#open-menu"></use>
-                </svg>
-            </button>
+            <div class="header__group-container">
+                <ul class="header__laptop-list">
+                    <li class="header__laptop-item">
+                        <a class="header__laptop-link active" href="#">Home</a>
+                    </li>
+                    <li class="header__laptop-item">
+                        <a class="header__laptop-link" href="#">About us</a>
+                    </li>
+                    <li class="header__laptop-item">
+                        <a class="header__laptop-link" href="#">How it’s made?</a>
+                    </li>
+                    <li class="header__laptop-item">
+                        <a class="header__laptop-link" href="#">Our products</a>
+                    </li>
+                    <li class="header__laptop-item">
+                        <a class="header__laptop-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="header__btn-switch-container">
+                    <button type="menu" class="header__btn-switch" data-menu-button>
+                        <svg class="header__btn-svg"
+                        aria-label="switch button for menu"
+                        aria-expanded="false"
+                        role="button">
+                            <use href="./img/svg/menu.svg#open-menu"></use>
+                        </svg>
+                    </button>
+                </div>    
+                <div class="header__btn-buy-container">
+                    <button class="menu__btn-buy menu__btn-buy--width">
+                        <span class="menu__btn-text">Buy now </span>
+                        <svg class="menu__svg-buy">
+                            <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
             <div class="menu" data-menu data-menu data-btn-switch>
                 <button class="menu__btn-switch" data-menu-switch>
                     <svg class="menu__btn-svg"
@@ -40,7 +69,7 @@
                         <use href="./img/svg/close.svg#close"></use>
                     </svg>
                 </button>
-                <button class="menu__btn-buy">
+                <button class="menu__btn-buy menu__btn-buy--width">
                     <span class="menu__btn-text">Buy now </span>
                     <svg class="menu__svg-buy">
                         <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
@@ -68,25 +97,122 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero__container container">
-                <img class="hero__image" src="./img/hero/slider-pic7 1.png" alt="">
-                <h1 class="hero__title">
-                    ice cream <br>
-                    made with <br>
-                    <span class="hero__title-container">passion</span>
-                </h1>
-                <ul class="hero__list">
-                    <li class="hero__item">
-                        <button type="button" class="hero__button hero__button--back-color">
-                            Products
-                        </button>
-                    </li>
-                    <li class="hero__item">
-                        <button type="button" class="hero__button">
-                            How it’s made?
-                        </button>
-                    </li>
-                </ul>
+            <div class="hero__container">
+                <div>
+                    <picture>
+
+                        <source 
+                        srcset=" 
+                        ./img/hero/ice-cream-pc-1x.png 1x , 
+                        ./img/hero/ice-cream-pc-2x.png 2x , 
+                        ./img/hero/ice-cream-pc-3x.png 3x" 
+                        type="image/png" 
+                        media="(min-width: 1200px)"
+                        >
+
+                        <source 
+                        srcset=" 
+                        ./img/hero/ice-cream-tablet-1x.png 1x , 
+                        ./img/hero/ice-cream-tablet-2x.png 2x , 
+                        ./img/hero/ice-cream-tablet-3x.png 3x" 
+                        type="image/png" 
+                        media="(min-width: 768px)"
+                        >
+                        
+                        <source 
+                        srcset=" 
+                        ./img/hero/ice-cream-mobile-1x.png 1x , 
+                        ./img/hero/ice-cream-mobile-2x.png 2x , 
+                        ./img/hero/ice-cream-mobile-3x.png 3x" 
+                        type="image/png" 
+                        >
+
+                        <img class="hero__ice-cream-image" src="./img/hero/ice-cream-pc-3x.png"  alt="ice cream">
+                    </picture>
+                    <h1 class="hero__title">
+                        ice cream <br>
+                        made with <br>
+                        <span class="hero__title-container">passion</span>
+                    </h1>
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <button type="button" class="hero__button hero__button--back-color">
+                                Products
+                            </button>
+                        </li>
+                        <li class="hero__item">
+                            <button type="button" class="hero__button">
+                                How it’s made?
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="hero__image-container">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/hero/milk-pc-1x.png 1x , 
+                            ./img/hero/milk-pc-2x.png 2x , 
+                            ./img/hero/milk-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/hero/milk-tablet-1x.png 1x , 
+                            ./img/hero/milk-tablet-2x.png 2x , 
+                            ./img/hero/milk-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+    
+                            <img class="hero__milk-image" src="./img/hero/milk-pc-3x.png"  alt="milk">
+                        </picture>
+                        <div class="hero__milk-container">
+                            <p class="hero__milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                            <a class="hero__milk-link" href="#">
+                                <svg class="hero__milk-svg">
+                                    <use href="./img/svg/sprite.svg#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="hero__statistic-list">
+                        <li class="hero__statistic-item">
+                            <p class="hero__statistic-number">16</p>
+                            <p class="hero__statistic-description">cafes</p>
+                        </li>
+                        <li class="hero__statistic-item hero__statistic-item--width">
+                            <p class="hero__statistic-number">23</p>
+                            <p class="hero__statistic-description">food trucks</p>
+                        </li>
+                    </ul>
+                    <picture>
+
+                        <source 
+                        srcset=" 
+                        ./img/hero/girl-pc-1x.png 1x , 
+                        ./img/hero/girl-pc-2x.png 2x , 
+                        ./img/hero/girl-pc-3x.png 3x" 
+                        type="image/png" 
+                        media="(min-width: 1200px)"
+                        >
+
+                        <source 
+                        srcset=" 
+                        ./img/hero/girl-tablet-1x.png 1x , 
+                        ./img/hero/girl-tablet-2x.png 2x , 
+                        ./img/hero/girl-tablet-3x.png 3x" 
+                        type="image/png" 
+                        media="(min-width: 768px)"
+                        >
+
+                        <img class="hero__statistic-img" src="./img/hero/girl-pc-3x.png"  alt="girl">
+                    </picture>
+                </div>
             </div>
         </section>
         <section class="products section">
@@ -96,7 +222,36 @@
                 <ul class="products__list">
                     <li class="products__item">
                         <div class="product-card">
-                            <img class="product-card__img" src="./img/products/product1.png" alt="pink ice cream">
+                            <picture>
+
+                                <source 
+                                srcset=" 
+                                ./img/products/product1-pc-1x.png 1x , 
+                                ./img/products/product1-pc-2x.png 2x , 
+                                ./img/products/product1-pc-3x.png 3x" 
+                                type="image/png" 
+                                media="(min-width: 1200px)"
+                                >
+        
+                                <source 
+                                srcset=" 
+                                ./img/products/product1-tablet-1x.png 1x , 
+                                ./img/products/product1-tablet-2x.png 2x , 
+                                ./img/products/product1-tablet-3x.png 3x" 
+                                type="image/png" 
+                                media="(min-width: 768px)"
+                                >
+
+                                <source 
+                                srcset=" 
+                                ./img/products/product1-mobile-1x.png 1x , 
+                                ./img/products/product1-mobile-2x.png 2x , 
+                                ./img/products/product1-mobile-3x.png 3x" 
+                                type="image/png" 
+                                >
+        
+                                <img class="product-card__img" src="./img/products/product1-pc-3x.png" alt="pink ice cream">
+                            </picture>
                             <h3 class="product-card__title">ice cream</h3>
                             <ul class="product-card__list">
                                 <li class="product-card__item"></li>
@@ -115,7 +270,36 @@
                     </li>
                     <li class="products__item">
                         <div class="product-card product-card--ice-coffe-background">
-                            <img class="product-card__img" src="./img/products/product2.png" alt="pink ice cream">
+                            <picture>
+
+                                <source 
+                                srcset=" 
+                                ./img/products/product2-pc-1x.png 1x , 
+                                ./img/products/product2-pc-2x.png 2x , 
+                                ./img/products/product2-pc-3x.png 3x" 
+                                type="image/png" 
+                                media="(min-width: 1200px)"
+                                >
+        
+                                <source 
+                                srcset=" 
+                                ./img/products/product2-tablet-1x.png 1x , 
+                                ./img/products/product2-tablet-2x.png 2x , 
+                                ./img/products/product2-tablet-3x.png 3x" 
+                                type="image/png" 
+                                media="(min-width: 768px)"
+                                >
+
+                                <source 
+                                srcset=" 
+                                ./img/products/product2-mobile-1x.png 1x , 
+                                ./img/products/product2-mobile-2x.png 2x , 
+                                ./img/products/product2-mobile-3x.png 3x" 
+                                type="image/png" 
+                                >
+        
+                                <img class="product-card__img" src="./img/products/product2-pc-3x.png" alt="pink ice cream">
+                            </picture>
                             <h3 class="product-card__title">ice coffee</h3>
                             <ul class="product-card__list">
                                 <li class="product-card__item"></li>
@@ -134,7 +318,36 @@
                     </li>
                     <li class="products__item">
                         <div class="product-card product-card--milckshake-background">
-                            <img class="product-card__img" src="./img/products/product3.png" alt="pink ice cream">
+                            <picture>
+
+                                <source 
+                                srcset=" 
+                                ./img/products/product3-pc-1x.png 1x , 
+                                ./img/products/product3-pc-2x.png 2x , 
+                                ./img/products/product3-pc-3x.png 3x" 
+                                type="image/png" 
+                                media="(min-width: 1200px)"
+                                >
+        
+                                <source 
+                                srcset=" 
+                                ./img/products/product3-tablet-1x.png 1x , 
+                                ./img/products/product3-tablet-2x.png 2x , 
+                                ./img/products/product3-tablet-3x.png 3x" 
+                                type="image/png" 
+                                media="(min-width: 768px)"
+                                >
+
+                                <source 
+                                srcset=" 
+                                ./img/products/product3-mobile-1x.png 1x , 
+                                ./img/products/product3-mobile-2x.png 2x , 
+                                ./img/products/product3-mobile-3x.png 3x" 
+                                type="image/png" 
+                                >
+        
+                                <img class="product-card__img" src="./img/products/product3-pc-3x.png" alt="pink ice cream">
+                            </picture>
                             <h3 class="product-card__title">milkshakes</h3>
                             <ul class="product-card__list">
                                 <li class="product-card__item"></li>
@@ -160,22 +373,55 @@
                     <p class="about__subtitle">tradition and love</p>
                     <h2 class="about__title">how it’s made?</h2>
                 </div>
-                <img  class="about__img" src="./img/about/about-cow.png" alt="cow">
-                <p class="about__primary-text">
-                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-                </p>
-                <p class="about__text">
-                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-                    <span class="about__text-container">
-                        Aliquam erat volutpat. Aenean accumsan.
-                    </span>
-                </p>
-                <button class="about__btn">
-                    Read more
-                    <svg class="about__btn-svg">
-                        <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
+                <div class="about__flex-container">
+                    <picture>
+
+                        <source 
+                        srcset=" 
+                        ./img/about/about-cow-pc-1x.png 1x , 
+                        ./img/about/about-cow-pc-2x.png 2x , 
+                        ./img/about/about-cow-pc-3x.png 3x" 
+                        type="image/png" 
+                        media="(min-width: 1200px)"
+                        >
+
+                        <source 
+                        srcset=" 
+                        ./img/about/about-cow-tablet-1x.png 1x , 
+                        ./img/about/about-cow-tablet-2x.png 2x , 
+                        ./img/about/about-cow-tablet-3x.png 3x" 
+                        type="image/png" 
+                        media="(min-width: 768px)"
+                        >
+
+                        <source 
+                        srcset=" 
+                        ./img/about/about-cow-mobile-1x.png 1x , 
+                        ./img/about/about-cow-mobile-2x.png 2x , 
+                        ./img/about/about-cow-mobile-3x.png 3x" 
+                        type="image/png" 
+                        >
+
+                        <img  class="about__img" src="./img/about/about-cow-pc-3x.png" alt="cow">
+                    </picture>
+                    <div class="about__group-container">
+                        <p class="about__primary-text">
+                            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                        </p>
+                        <p class="about__text">
+                            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                            <span class="about__text-container">
+                                Aliquam erat volutpat. Aenean accumsan.
+                            </span>
+                        </p>
+                        <button class="about__btn">
+                            Read more
+                            <svg class="about__btn-svg">
+                                <use href="./img/svg/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="statistic">
@@ -207,26 +453,316 @@
             <div class="gallery__container container">
                 <ul class="gallery__list">
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery1.jpg" width="44px" height="44px" alt="icecream">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery1-pc-1x.png 1x , 
+                            ./img/gellery/gallery1-pc-2x.png 2x , 
+                            ./img/gellery/gallery1-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery1-tablet-1x.png 1x , 
+                            ./img/gellery/gallery1-tablet-2x.png 2x , 
+                            ./img/gellery/gallery1-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery1-mobile-1x.png 1x , 
+                            ./img/gellery/gallery1-mobile-2x.png 2x , 
+                            ./img/gellery/gallery1-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery1-pc-3x.png" alt="icecream">
+                        </picture>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery2.jpg" width="44px" height="44px" alt="icecream">
-                        <img class="gallery__img" src="./img/gellery/gallery3.jpg" width="44px" height="44px" alt="icecream">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery2-pc-1x.png 1x , 
+                            ./img/gellery/gallery2-pc-2x.png 2x , 
+                            ./img/gellery/gallery2-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery2-tablet-1x.png 1x , 
+                            ./img/gellery/gallery2-tablet-2x.png 2x , 
+                            ./img/gellery/gallery2-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery2-mobile-1x.png 1x , 
+                            ./img/gellery/gallery2-mobile-2x.png 2x , 
+                            ./img/gellery/gallery2-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery2-pc-3x.png" alt="icecream">
+                        </picture>
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery3-pc-1x.png 1x , 
+                            ./img/gellery/gallery3-pc-2x.png 2x , 
+                            ./img/gellery/gallery3-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery3-tablet-1x.png 1x , 
+                            ./img/gellery/gallery3-tablet-2x.png 2x , 
+                            ./img/gellery/gallery3-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery3-mobile-1x.png 1x , 
+                            ./img/gellery/gallery3-mobile-2x.png 2x , 
+                            ./img/gellery/gallery3-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery3-pc-3x.png" alt="icecream">
+                        </picture>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery4.jpg" width="90px" alt="icecream">
-                        <img class="gallery__img" src="./img/gellery/gallery5.jpg" width="44px" height="44px" alt="icecream">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery4-pc-1x.png 1x , 
+                            ./img/gellery/gallery4-pc-2x.png 2x , 
+                            ./img/gellery/gallery4-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery4-tablet-1x.png 1x , 
+                            ./img/gellery/gallery4-tablet-2x.png 2x , 
+                            ./img/gellery/gallery4-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery4-mobile-1x.png 1x , 
+                            ./img/gellery/gallery4-mobile-2x.png 2x , 
+                            ./img/gellery/gallery4-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img gallery__img--big" src="./img/gellery/gallery4-pc-3x.png" alt="icecream">
+                        </picture>
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery5-pc-1x.png 1x , 
+                            ./img/gellery/gallery5-pc-2x.png 2x , 
+                            ./img/gellery/gallery5-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery5-tablet-1x.png 1x , 
+                            ./img/gellery/gallery5-tablet-2x.png 2x , 
+                            ./img/gellery/gallery5-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery5-mobile-1x.png 1x , 
+                            ./img/gellery/gallery5-mobile-2x.png 2x , 
+                            ./img/gellery/gallery5-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery5-pc-3x.png" alt="icecream">
+                        </picture>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery6.jpg" width="44px" height="44px" alt="icecream">
-                        <img class="gallery__img" src="./img/gellery/gallery7.jpg" width="44px" height="44px" alt="icecream">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery6-pc-1x.png 1x , 
+                            ./img/gellery/gallery6-pc-2x.png 2x , 
+                            ./img/gellery/gallery6-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery6-tablet-1x.png 1x , 
+                            ./img/gellery/gallery6-tablet-2x.png 2x , 
+                            ./img/gellery/gallery6-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery6-mobile-1x.png 1x , 
+                            ./img/gellery/gallery6-mobile-2x.png 2x , 
+                            ./img/gellery/gallery6-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery6-pc-3x.png" alt="icecream">
+                        </picture>
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery7-pc-1x.png 1x , 
+                            ./img/gellery/gallery7-pc-2x.png 2x , 
+                            ./img/gellery/gallery7-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery7-tablet-1x.png 1x , 
+                            ./img/gellery/gallery7-tablet-2x.png 2x , 
+                            ./img/gellery/gallery7-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery7-mobile-1x.png 1x , 
+                            ./img/gellery/gallery7-mobile-2x.png 2x , 
+                            ./img/gellery/gallery7-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery7-pc-3x.png" alt="icecream">
+                        </picture>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery8.jpg" width="44px" height="44px" alt="icecream">
-                        <img class="gallery__img" src="./img/gellery/gallery9.jpg" width="44px" height="44px" alt="icecream">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery8-pc-1x.png 1x , 
+                            ./img/gellery/gallery8-pc-2x.png 2x , 
+                            ./img/gellery/gallery8-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery8-tablet-1x.png 1x , 
+                            ./img/gellery/gallery8-tablet-2x.png 2x , 
+                            ./img/gellery/gallery8-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery8-mobile-1x.png 1x , 
+                            ./img/gellery/gallery8-mobile-2x.png 2x , 
+                            ./img/gellery/gallery8-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery8-pc-3x.png" alt="icecream">
+                        </picture>
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery9-pc-1x.png 1x , 
+                            ./img/gellery/gallery9-pc-2x.png 2x , 
+                            ./img/gellery/gallery9-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery9-tablet-1x.png 1x , 
+                            ./img/gellery/gallery9-tablet-2x.png 2x , 
+                            ./img/gellery/gallery9-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery9-mobile-1x.png 1x , 
+                            ./img/gellery/gallery9-mobile-2x.png 2x , 
+                            ./img/gellery/gallery9-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery9-pc-3x.png" alt="icecream">
+                        </picture>
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./img/gellery/gallery10.jpg" width="44px" height="44px" alt="icecream">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery10-pc-1x.png 1x , 
+                            ./img/gellery/gallery10-pc-2x.png 2x , 
+                            ./img/gellery/gallery10-pc-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 1200px)"
+                            >
+    
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery10-tablet-1x.png 1x , 
+                            ./img/gellery/gallery10-tablet-2x.png 2x , 
+                            ./img/gellery/gallery10-tablet-3x.png 3x" 
+                            type="image/png" 
+                            media="(min-width: 768px)"
+                            >
+
+                            <source 
+                            srcset=" 
+                            ./img/gellery/gallery10-mobile-1x.png 1x , 
+                            ./img/gellery/gallery10-mobile-2x.png 2x , 
+                            ./img/gellery/gallery10-mobile-3x.png 3x" 
+                            type="image/png" 
+                            >
+    
+                            <img class="gallery__img" src="./img/gellery/gallery10-pc-3x.png" alt="icecream">
+                        </picture>
                     </li>
                 </ul>
             </div>
@@ -235,7 +771,18 @@
             <div class="comments__container container swiper" >
                 <ul class="comments__list swiper-wrapper">
                     <li class="comments__item swiper-slide">
-                        <img class="comments__img" src="./img/comments/comments1.png" alt="girl">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/comments/comments1-1x.png 1x , 
+                            ./img/comments/comments1-2x.png 2x , 
+                            ./img/comments/comments1-3x.png 3x" 
+                            type="image/png"
+                            >
+    
+                            <img class="comments__img" src="./img/comments/comments1-3x.png" alt="girl">
+                        </picture>
                         <div class="comments__background-container comments__background-container--svg">
                             <p class="comments__description">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                         </div>
@@ -247,7 +794,18 @@
                         <p class="comments__location-text">Emily, Los Angeles</p>
                     </li>
                     <li class="comments__item swiper-slide">
-                        <img class="comments__img" src="./img/gellery/gallery8.jpg" alt="girl">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/comments/comments2-1x.png 1x , 
+                            ./img/comments/comments2-2x.png 2x , 
+                            ./img/comments/comments2-3x.png 3x" 
+                            type="image/png"
+                            >
+    
+                            <img class="comments__img" src="./img/comments/comments2-3x.png" alt="girl">
+                        </picture>
                         <div class="comments__background-container">
                             <p class="comments__description">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                         </div>
@@ -259,7 +817,18 @@
                         <p class="comments__location-text">Anna, Berlin</p>
                     </li>
                     <li class="comments__item swiper-slide">
-                        <img class="comments__img" src="./img/gellery/gallery4.jpg" alt="girl">
+                        <picture>
+
+                            <source 
+                            srcset=" 
+                            ./img/comments/comments3-1x.png 1x , 
+                            ./img/comments/comments3-2x.png 2x , 
+                            ./img/comments/comments3-3x.png 3x" 
+                            type="image/png"
+                            >
+    
+                            <img class="comments__img" src="./img/comments/comments3-3x.png" alt="girl">
+                        </picture>
                         <div class="comments__background-container">
                             <p class="comments__description">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
                         </div>
@@ -371,34 +940,38 @@
                         </button>
                     </li>
                 </ul>
-                <div class="contacts-text">
-                    <p class="contacts-text__subtitle">homemade ice cream made</p>
-                    <h2 class="contacts-text__title">with passion</h2>
+                <div class="contacts__flex-container">
+                    <div class="contacts-text">
+                        <p class="contacts-text__subtitle">homemade ice cream made</p>
+                        <h2 class="contacts-text__title">with passion</h2>
+                    </div>
+                    <div>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <svg class="social__icon" width="20px" height="20px">
+                                        <use href="./img/svg/sprite.svg#icon-github"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <svg class="social__icon" width="20px" height="20px">
+                                        <use href="./img/svg/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#">
+                                    <svg class="social__icon" width="20px" height="20px">
+                                        <use href="./img/svg/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="contacts__text">Feel free to contact<a class="contacts__text-link" href="#">+61 (0) 383 766 284</a></p>
+                    </div>
                 </div>
-                <ul class="social">
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="20px" height="20px">
-                                <use href="./img/svg/sprite.svg#icon-github"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="20px" height="20px">
-                                <use href="./img/svg/sprite.svg#icon-telegram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="20px" height="20px">
-                                <use href="./img/svg/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <p class="contacts__text">Feel free to contact<a class="contacts__text-link" href="#">+61 (0) 383 766 284</a></p>
             </div>
         </section>
     </main>

@@ -6,44 +6,133 @@
 .gallery__container{
     width: 320px;
     padding: 0;
+    
+    @media screen and (min-width:768px ) {
+        width: 768px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        width: 1201px;
+        padding-right: 94px;
+        padding-left: 94px;
+    }
 }
 
 .gallery__list{
     height: 136px;
     display: flex;
     gap: 2px;
+        
+    @media screen and (min-width:768px ) {
+        height: 327px;
+        gap: 5.6px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        height: 430px;
+        gap: 8px;
+    }
 }
 
 .gallery__item{
     display: flex;
     flex-direction: column;
     gap: 2px;
+            
+    @media screen and (min-width:768px ) {
+        gap: 6px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        gap: 9px;
+    }
 }
 
 .gallery__item:nth-child(1){
     margin-top: 45px;
+        
+    @media screen and (min-width:768px ) {
+        margin-top: 108px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 143px;
+    }
 }
 
 .gallery__item:nth-child(2){
     margin-top: 28px;
+        
+    @media screen and (min-width:768px ) {
+        margin-top: 67px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 89px;
+    }
 }
 
 .gallery__item:nth-child(4){
     margin-top: 31px;
+        
+    @media screen and (min-width:768px ) {
+        margin-top: 75px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 99px;
+    }
 }
 
 .gallery__item:nth-child(5){
     margin-top: 21px;
+    
+    @media screen and (min-width:768px ) {
+        margin-top: 50px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 66px;
+    }
 }
 
 .gallery__item:nth-child(6){
     margin-top: 49px;
+    
+    @media screen and (min-width:768px ) {
+        margin-top: 118px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        margin-top: 154px;
+    }
 }
 
 .gallery__img{
     border-radius: 4px;
+    width: 44px;
+    
+    @media screen and (min-width:768px ) {
+        width: 105px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        width: 138px;
+    }
+}
+
+.gallery__img--big{
+    width: 90px;
+        
+    @media screen and (min-width:768px ) {
+        width: 215px;
+    }
+
+    @media screen and (min-width:1200px ) {
+        width: 283px;
+    }
 }
 
 .gallery__img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
