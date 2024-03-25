@@ -3,7 +3,7 @@
     height: 502px;
     padding-top: 194px;
     padding-bottom: 158px;
-    background-image: url(../img/hero/circle.png);
+    background-image: url(../../img/hero/circle.png);
     background-position: 36px 83px;
     background-repeat: no-repeat;
     background-size: 346px 344px;
@@ -14,22 +14,60 @@
         padding-top: 92px;
         padding-bottom: 16px;
         background-image:
-        url(../img/hero/circle.png),
+        url(../../img/hero/circle-tablet-1x.png),
         linear-gradient(
             to top,
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.2));
         background-position: 248px 43px , 0px 0px;
         background-size: 333px 335px, 100vw 100vh;
+        
+        @media 
+            (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                url(../../img/hero/circle-tablet-2x.png),
+                linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2));
+        }
+
+        @media 
+        (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image:
+            url(../../img/hero/circle-tablet-3x.png),
+            linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2));
+        }
     }
     
     @media screen and (min-width:1200px ) {
         height: 664px;
         padding-top: 146px;
         padding-bottom: 61px;
-        background-image: url(../img/hero/circle.png);
+        background-image: url(../../img/hero/circle-pc-1x.png);
         background-position: 517px 54px;
-        background-size: 534px 534px,
+        background-size: 534px 534px;
+
+        @media 
+            (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../../img/hero/circle-pc-2x.png);
+        }
+
+        @media 
+        (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url(../../img/hero/circle-pc-3x.png);
+        }
     }
 }
 
@@ -144,8 +182,8 @@
 
     &:hover,
     &:focus{
-        color: $title-primary-color;
-        background-color: $hero-title-container;
+        color: $hero-title-container;
+        background-color: #ECEBEB;
     }
 
     @media screen and (min-width:1200px ) {
@@ -161,15 +199,17 @@
     color: $title-primary-color;
     background-color: $hero-title-container;
 
-    &:hover,
-    &:focus{
-        color:$hero-title-container;
-        background-color: $title-primary-color;
-    }
-
     @media screen and (min-width:1200px ) {
         width: 107px;
     }
+}
+
+.hero__button-link{
+    color:$hero-title-container;
+}
+
+.hero__button-link--back-color{
+    color: $title-primary-color;
 }
 
 .hero__image-container{
@@ -228,6 +268,14 @@
     border-radius: 50%;
     padding: 0px;
     border: none;
+    transition: background-color $cubic,
+    stroke $cubic;
+
+    &:hover,
+    &:focus{
+        background-color: $hero-title-container;
+        stroke: $title-primary-color;
+    }
 
     @media screen and (min-width:1200px ) {
         margin-top: 20px;
@@ -257,16 +305,45 @@
     width: 43px;
     height: 44px;
     padding-right: 10px;
-    background-image: url(../../img/hero/small-circle.png);
+    background-image: url(../../img/hero/small-circle-tablet-1x.png);
     background-repeat: no-repeat;
     background-position: 100% 0px;
+    background-size: 16px 16px;
+    
+    @media 
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../img/hero/small-circle-tablet-2x.png);
+    }
 
+    @media 
+        (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../../img/hero/small-circle-tablet-3x.png);
+    }
     
     @media screen and (min-width:1200px ) {
+        background-image: url(../../img/hero/small-circle-pc-1x.png);
         padding-right: 18px;
         width: 72px;
         height: 77px;
         background-size: 30px 30px;
+
+        @media 
+            (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../../img/hero/small-circle-pc-1x.png);
+        }
+
+        @media 
+        (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url(../../img/hero/small-circle-pc-1x.png);
+        }
     }
 }
 

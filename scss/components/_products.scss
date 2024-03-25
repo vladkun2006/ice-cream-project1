@@ -73,3 +73,12 @@
         margin-top: 281px;
     }
 }
+
+
+.products__item{
+    transition: transform $cubic;
+    &:hover{
+        transform: rotateY(180deg);
+    }
+
+}

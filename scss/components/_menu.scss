@@ -9,6 +9,8 @@
     background-color: $menu-primary-background-color;
     height: 502px;
     width: 100vw;
+    box-shadow: -8px 0px 20px 0px #00000040;
+
     
     &.is-open{
         display: flex;
@@ -73,13 +75,13 @@
 
     &:hover .menu__svg-buy,
     &:focus .menu__svg-buy{
-        fill: $title-primary-color;
+        color: $hero-title-container;
     }
 
     &:hover,
     &:focus{
-        color: $title-primary-color;
-        background-color: $hero-title-container;
+        color: $hero-title-container;
+        background-color: #ECEBEB;
     }
         
     @media screen and (min-width:768px ) {
